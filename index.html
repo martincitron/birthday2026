@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martinův wishlist</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Inter, Arial, sans-serif;
+            background: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+
+        .wishlist {
+            display: grid;
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all 0.2s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-2px);
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .description {
+            margin-top: 8px;
+            color: #6b7280;
+        }
+
+        .meta {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .priority {
+            color: #f59e0b;
+        }
+
+        .link {
+            display: inline-block;
+            margin-top: 16px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+        }
+
+        .link:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎁 Martinův wishlist</h1>
+
+    <p class="subtitle">
+        Nápady na narozeniny, Vánoce nebo jinou příležitost.
+    </p>
+
+    <div class="wishlist">
+
+        <div class="item">
+            <div class="title">Kindle Paperwhite</div>
+
+            <div class="description">
+                Čtečka elektronických knih.
+            </div>
+
+            <div class="meta">
+                <span class="price">cca 4 000 Kč</span>
+                <span class="priority">⭐⭐⭐</span>
+            </div>
+
+            <a class="link" href="https://www.alza.cz" target="_blank">
+                Odkaz
+            </a>
+        </div>
+
+        <div class="item">
+            <div class="title">LEGO Technic</div>
+
+            <div class="description">
+                Libovolná větší sada.
+            </div>
+
+            <div class="meta">
+                <span class="price">2 000 - 5 000 Kč</span>
+                <span class="priority">⭐⭐</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="title">Dárkový poukaz Alza</div>
+
+            <div class="description">
+                Univerzální varianta.
+            </div>
+
+            <div class="meta">
+                <span class="price">libovolná částka</span>
+                <span class="priority">⭐</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Aktualizováno 2026
+    </footer>
+
+</div>
+
+</body>
+</html>
